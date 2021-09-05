@@ -1,0 +1,29 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "api for testing purposes",
+  "main": "main.ts",
+  "scripts": {
+    "build": "babel --out-file ./build/main.js ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngryBotIY/simple-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngryBotIY/simple-api/issues"
+  },
+  "homepage": "https://github.com/AngryBotIY/simple-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-typescript": "^7.15.0"
+  }
+}
