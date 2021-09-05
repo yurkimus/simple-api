@@ -1,5 +1,17 @@
-type N = 1
+import express from 'express'
 
-const n: N = 1
+import { Route } from './routes'
 
-console.log(n, typeof n)
+const server = express()
+
+const PORT = 3000
+
+server.get(Route.Home, (request, response) => {
+    response.send('Hello world!')
+})
+
+server.get(Route.Api, (request, response) => {
+    response.send('Hello world from api!')
+})
+
+server.listen(PORT, () => console.log('Server successfully started on port ' + PORT))
